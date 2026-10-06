@@ -1,0 +1,2 @@
+# Copy to vault.yml, set a value, then: ansible-vault encrypt vault.yml
+vault_orders_db_password: change-me

@@ -1,0 +1,11 @@
+[Unit]
+Description=Orders service
+After=network.target
+
+[Service]
+User={{ jvm_app_user }}
+ExecStart=/usr/bin/java -Xmx{{ jvm_heap_mb }}m -Dserver.port={{ jvm_port }} -jar {{ jvm_app_jar }}
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

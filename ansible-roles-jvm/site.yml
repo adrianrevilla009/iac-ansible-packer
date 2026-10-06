@@ -1,0 +1,6 @@
+---
+- name: Provision an Orders JVM host
+  hosts: orders
+  become: true
+  roles:
+    - role: jvm

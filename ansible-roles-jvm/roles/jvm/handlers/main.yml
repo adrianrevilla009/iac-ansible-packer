@@ -1,0 +1,8 @@
+---
+- name: Restart orders
+  ansible.builtin.systemd:
+    name: orders
+    state: restarted
+    daemon_reload: true
+    enabled: true
+  when: jvm_manage_service

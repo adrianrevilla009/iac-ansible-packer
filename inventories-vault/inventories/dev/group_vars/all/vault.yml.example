@@ -1,0 +1,3 @@
+# Copy to vault.yml, set a value, then: ansible-vault encrypt vault.yml
+# Only the encrypted vault.yml may be committed (it is not committed in this lab).
+vault_orders_db_password: change-me

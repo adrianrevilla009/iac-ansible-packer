@@ -1,0 +1,8 @@
+---
+jvm_package: openjdk-21-jre-headless
+jvm_app_user: orders
+jvm_app_dir: /opt/orders
+jvm_app_jar: /opt/orders/orders.jar
+jvm_heap_mb: 256
+jvm_port: 8080
+jvm_manage_service: true

@@ -1,0 +1,3 @@
+---
+orders_heap_mb: 256
+orders_db_password: "{{ vault_orders_db_password }}"
